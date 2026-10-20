@@ -40,6 +40,18 @@ Compatible with iCON 100 / 200 series (same cloud account as the web app).
 2. Restart Home Assistant
 3. Add the integration as above
 
+## Finding your Home ID
+
+The Home ID (also called iCON ID) identifies which building/controller to control. One enzoldhazam.hu account can have more than one home.
+
+1. Open the web app: [https://www.enzoldhazam.hu/app](https://www.enzoldhazam.hu/app)
+2. Sign in with the same username and password you will use in Home Assistant
+3. Open **System settings** (gear / system menu — the web UI is often in Hungarian)
+4. Find **Home ID**
+5. Copy the long numeric value (example shape: `500221478198`)
+
+Use that exact number when adding the integration. If login works but setup says the Home ID was not found, double-check you copied the ID for the home you intend to control (not a name or serial number).
+
 ## Setup
 
 When adding the integration you will be asked for:
@@ -48,7 +60,7 @@ When adding the integration you will be asked for:
 | --- | --- |
 | **Username** | Email or username for [enzoldhazam.hu](https://www.enzoldhazam.hu) |
 | **Password** | Account password |
-| **Home ID (iCON ID)** | Web UI → **System settings** → **Home ID** (long number, e.g. `500221478198`) |
+| **Home ID (iCON ID)** | See [Finding your Home ID](#finding-your-home-id) above |
 | **Allow switching between heating and cooling** | Optional — see below. Leave **off** unless your system lets thermostats choose the season |
 
 After setup you get:
