@@ -1,0 +1,12 @@
+{
+  "domain": "ngbs_icon",
+  "name": "NGBS iCON Thermostat",
+  "codeowners": ["@bbanyai"],
+  "config_flow": true,
+  "documentation": "https://github.com/bbanyai/hacs-ngbs-icon-thermostat",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/bbanyai/hacs-ngbs-icon-thermostat/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

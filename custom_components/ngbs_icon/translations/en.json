@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NGBS iCON Thermostat",
+        "description": "Sign in with your enzoldhazam.hu account. Home ID is under System settings → Home ID in the web UI.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "icon_id": "Home ID (iCON ID)",
+          "manual_heating_cooling_switch": "Allow switching between heating and cooling"
+        },
+        "data_description": {
+          "manual_heating_cooling_switch": "Lets Heat/Cool ask the controller to change season. Leave off unless your system lets thermostats decide; otherwise Heat/Cool simply mean on."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate NGBS iCON",
+        "description": "Credentials for this Home ID are no longer valid. Enter the updated username and password.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "invalid_home": "Home ID not found on this account",
+      "cannot_connect": "Could not connect to the NGBS cloud"
+    },
+    "abort": {
+      "already_configured": "This Home ID is already configured",
+      "reauth_successful": "Reauthentication successful"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "NGBS iCON options",
+        "data": {
+          "manual_heating_cooling_switch": "Allow switching between heating and cooling"
+        },
+        "data_description": {
+          "manual_heating_cooling_switch": "Lets Heat/Cool ask the controller to change season. Leave off unless your system lets thermostats decide."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "water_temperature": {
+        "name": "Water temperature"
+      },
+      "external_temperature": {
+        "name": "External temperature"
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "humidity": {
+        "name": "Humidity"
+      },
+      "dew_point": {
+        "name": "Dew point"
+      }
+    }
+  }
+}
